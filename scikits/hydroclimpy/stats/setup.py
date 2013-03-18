@@ -10,10 +10,8 @@ def configuration(parent_package='',top_path=None):
     config.add_data_dir('tests')
 
     # add lmoments module
-    config.add_extension('_lmoments',
-        sources=['lmoments.f'],
-    )
-
+    config.add_extension('_lmoments', sources=['lmoments.f', 'lmomextras.f', 'regionalization.f'], )
+    
     return config
 
 if __name__ == '__main__':
