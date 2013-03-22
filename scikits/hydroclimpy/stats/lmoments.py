@@ -282,7 +282,7 @@ def lmoments(x, nmom=4, a=0, b=0, mode='stats'):
     if mode[0].lower() == 'm':
         if nmom >= 2:
             xmom[2:] /= xmom[1]
-    elif mode[1].lower() == 'r':
+    elif mode[0].lower() == 'r':
         if nmom >= 1:
             xmom[1] /= xmom[0]
     return xmom
